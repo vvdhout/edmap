@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+
+  <!-- Provide meta Title and Description -->
+  <title></title>
+  <meta name="description" content="">
+  <!-- Connect stylesheet -->
+  <link href="/css/style.css" rel="stylesheet" type="text/css">
+  <!-- Connect Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <!-- Provide jQuery framework -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Provide Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+  <!-- Provide Typed.js script -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <!-- Provide Mixpanel tracking -->
+  <script type="text/javascript">(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+mixpanel.init("dc73d2f44ef66d4e3c7127ce35f9b780");</script>
+
+  <!-- On-page styling -->
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+    color: #444;
+    text-align: center;
+    font-family: Calibri, sans-serif;
+    background-color: #fcfcfc;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .header h1 {
+    font-family: 'Hind';
+    font-size: 2.5rem;
+  }
+
+  .header > p {
+    font-size: 1.3rem;
+    color: #999;
+    width: 65%;
+    margin: auto;
+  }
+
+  .header {
+    width: 80%;
+    margin: 100px auto 70px;
+  }
+
+  .header span {
+    color: #2C71E0;
+  }
+
+  .header .image {
+    width: 100%;
+    height: 540px;
+  }
+
+  form p, form label {
+    font-size: 0.9rem !important;
+line-height: inherit;
+text-align: left;
+margin-left: 0;
+color: #999;
+display: block;
+margin-bottom: 8px;
+  }
+
+   form {
+   border:none;width:80%;margin: auto; text-align: left;
+   margin-top: 20px;
+   }
+
+   input:focus {
+       outline:none;
+    }
+
+    form input[type="text"], form input[type="email"]  {
+        background-color:#eee;border:none;border-radius:2px;padding:16px 20px;width:45%;box-sizing:border-box;font-size:.8rem;letter-spacing:.7px
+    }
+
+    form input[name="firstName"], form input[name="FNAME"] {
+        margin-bottom:20px;width:28%;margin-right:1%
+    }
+
+    form input[type="submit"] {
+        padding:16px 20px;box-sizing:border-box;width:22%;margin-left:2%;font-size:.7rem;background-color:#2c71e0;color:#fff;border:none;border-radius:3px;font-weight:600;letter-spacing:.6px;transition:.3s
+    }
+
+    form input[type="submit"]:disabled {
+        background-color:#61d1dd;cursor:default
+    }
+
+    form input[type="submit"]:hover {
+        cursor:hand;cursor:pointer;background-color:#61d1dd;transition:.3s
+    }
+
+    .resources {
+      width: 80%;
+      margin: auto;
+    }
+
+    .learnMore {
+      margin-bottom: 30px;
+      text-decoration: underline;
+      font-size: 1rem;
+    }
+
+    .segment {
+      width: 49.5%;
+      text-align: left;
+      padding-right: 30px;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+      margin: 15px auto;
+    }
+
+    .resources h3 {
+      margin: 15px 0;
+      text-decoration: underline;
+    }
+
+    .resources h4, .resources p {
+      display: inline-block;
+      margin: 0;
+      color: blue;
+    }
+
+    .resources h4 {
+      margin-right: 5px;
+    }
+
+    .entry {
+      margin: 8px auto;
+    }
+
+    .ctrld {
+    font-size: .9rem;
+    background-color: #000000aa;
+    padding: 4px 12px;
+    border-radius: 2px;
+    color: #fff;
+    position: absolute;
+    left: -550%;
+}
+
+
+  </style>
+
+</head>
+<body>
+  <div class="ctrld">
+  CTRL+D to bookmark
+  </div>
+
+<div class="header">
+  <h1>Evaluate all CS tracks to become<br>an awesome <i><span class="typeOut"></span></i></h1>
+  <p>Gain insights into the many Computer Science tracks that are offered and what content of the full CS curriculum they actually cover</p>
+  <div class="image" style="background-position: top; background-size: cover;background-image: linear-gradient(rgba(252, 252, 252, 0), rgba(252, 252, 252, 1)), url(/img/computersciencetracks.png);">
+  </div>
+
+  <!-- Begin Mailchimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="https://courseroot.us17.list-manage.com/subscribe/post?u=9d814c8d60f6cbf2553333ca2&amp;id=4b27ad8189" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Receive the latest computer science tracks and see how they compare against the full CS curriculum</label>
+  <input type="text" value="" name="FNAME" class="fname" id="mce-FNAME" placeholder="FIRST NAME" required>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="YOUR EMAIL*" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9d814c8d60f6cbf2553333ca2_4b27ad8189" tabindex="-1" value=""></div>
+    <input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button" onclick="mixpanel.track('Submission - Mapgrasp');">
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+</div>
+<a href="/"><div class="learnMore">
+  and here are 151 educational resources and platforms for you to consider<i class="fas fa-long-arrow-alt-right" style="
+    margin-left: 8px;
+    vertical-align: middle;
+"></i>
+</div></a>
+
+<script>
+mixpanel.track("Pageview - Mapgrasp");
+
+setTimeout(function(){$('.ctrld').fadeIn().delay(7000).fadeOut();},2500)
+
+  var options = {
+    strings: [
+    "data scientist",
+    "front-end developer",
+    "self-driving car engineer",
+    "AI specialist",
+    "blockchain developer",
+    "entrepreneur",
+    "game developer"],
+    typeSpeed: 50,
+    backSpeed: 20,
+    loop: true,
+    startDelay: 1500
+  }
+
+  var typed = new Typed(".typeOut", options);
+</script>
+
+</body>
+
+</html>

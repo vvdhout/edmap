@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+
+  <!-- Provide meta Title and Description -->
+  <title></title>
+  <meta name="description" content="">
+  <!-- Connect stylesheet -->
+  <link href="/css/style.css" rel="stylesheet" type="text/css">
+  <!-- Connect Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <!-- Provide jQuery framework -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Provide Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+  <!-- Provide Typed.js script -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <!-- Provide Mixpanel tracking -->
+  <script type="text/javascript">(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+mixpanel.init("dc73d2f44ef66d4e3c7127ce35f9b780");</script>
+
+  <!-- On-page styling -->
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+    color: #444;
+    text-align: center;
+    font-family: Calibri, sans-serif;
+    background-color: #fcfcfc;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .header h1 {
+    font-family: 'Hind';
+    font-size: 2.5rem;
+  }
+
+  .header > p {
+    font-size: 1.3rem;
+    color: #999;
+    width: 65%;
+    margin: auto;
+  }
+
+  .header {
+    width: 100%;
+    margin: 100px auto 70px;
+  }
+
+  .header span {
+    color: #2C71E0;
+  }
+
+  .header .image {
+    width: 100%;
+    height: 540px;
+  }
+
+  form p, form label {
+    font-size: 0.9rem !important;
+line-height: inherit;
+text-align: left;
+margin-left: 0;
+color: #999;
+display: block;
+margin-bottom: 8px;
+  }
+
+   form {
+   border:none;width:80%;margin: auto; text-align: left;
+   margin-top: 20px;
+   }
+
+   input:focus {
+       outline:none;
+    }
+
+    form input[type="text"], form input[type="email"]  {
+        background-color:#eee;border:none;border-radius:2px;padding:16px 20px;width:45%;box-sizing:border-box;font-size:.8rem;letter-spacing:.7px
+    }
+
+    form input[name="firstName"], form input[name="FNAME"] {
+        margin-bottom:20px;width:28%;margin-right:1%
+    }
+
+    form input[type="submit"] {
+        padding:16px 20px;box-sizing:border-box;width:22%;margin-left:2%;font-size:.7rem;background-color:#2c71e0;color:#fff;border:none;border-radius:3px;font-weight:600;letter-spacing:.6px;transition:.3s
+    }
+
+    form input[type="submit"]:disabled {
+        background-color:#61d1dd;cursor:default
+    }
+
+    form input[type="submit"]:hover {
+        cursor:hand;cursor:pointer;background-color:#61d1dd;transition:.3s
+    }
+
+    .resources {
+      width: 80%;
+      margin: auto;
+    }
+
+    .learnMore {
+      margin-bottom: 30px;
+      text-decoration: underline;
+      font-size: 1rem;
+    }
+
+    .segment {
+      width: 49.5%;
+      text-align: left;
+      padding-right: 30px;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+      margin: 15px auto;
+    }
+
+    .resources h3 {
+      margin: 15px 0;
+      text-decoration: underline;
+    }
+
+    .resources h4 {
+      display: inline-block;
+      margin: 0;
+      color: blue;
+    }
+
+    .resources h4 {
+      margin-right: 5px;
+    }
+
+    .entry {
+      margin: 8px auto;
+    }
+
+    .ctrld {
+    font-size: .8rem;
+    background-color: #000000aa;
+    padding: 4px 12px;
+    border-radius: 2px;
+    color: #fff;
+    position: fixed;
+    display: none;
+    right: 0;
+    text-align: left;
+}
+.ctrld a {
+  color: cornflowerblue;
+}
+
+.add {
+  line-height: 30px;
+  margin: 20px;
+}
+
+.personalized{padding:20px;background-color:#fff;border-left:3px solid cornflowerblue;padding-left:30px}.personalized h4{color:#005e7c}
+
+.personalized img {
+  width: 100%;
+}
+  </style>
+
+</head>
+<body>
+
+  <!--
+  //////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////
+  //////// This is just a super simple resource list ///////////
+  //////// that we hope you find useful. If you are  ///////////
+  //////// looking specifically for CS resources, be ///////////
+  //////// sure to go to /cs/. We are working on a   ///////////
+  //////// platform where we will compare the major  ///////////
+  //////// computer science programs against the     ///////////
+  //////// entire CS curriculum, and will provide    ///////////
+  //////// insight into which is best for you and    ///////////
+  //////// your goals.                               ///////////
+  ////////                                           ///////////
+  //////// Do you like that idea? let us know. We'd  ///////////
+  //////// love to include you in our beta.          ///////////
+  //////// Just send us an email with the subject    ///////////
+  //////// "I LOVE CS" and we will come back to you  ///////////
+  //////// as soon as possible.                      ///////////
+  ////////                                           ///////////
+  //////// info@courseroot.com                       ///////////
+  ////////                                           ///////////
+  //////// All the best and take care,               ///////////
+  ////////                                           ///////////
+  //////// Matt & Valentijn                          ///////////
+  //////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////
+-->
+
+  <div class="ctrld">
+  Here you will find 151 neat education resources you can use.<br>
+  <span style="color: #ddd;">Created by Matt (<a href="https://twitter.com/matt_dougherty2">@matt_dougherty2</a>) & Valentijn (<a href="https://twitter.com/vvdhout">@vvdhout</a>)</span> 🙏
+  </div>
+
+<div class="resources">
+  <div class="segment">
+    <h3>MOOC's and online tutorials</h3>
+    <div class="entry"><a href="https://en.wikipedia.org/wiki/Massive_open_online_course"><h4>Wiki What are MOOCS</h4></a><span></span></div>
+    <div class="entry"><a href="http://www.class-central.com/"><h4>Class Central</h4></a><span>| Search engine for MOOC’s with MOOC guides</span></div>
+    <div class="entry"><a href="https://courseroot.com/"><h4>Courseroot</h4></a><span>| Instant search for 80000+ online courses and tutorials</span></div>
+    <div class="entry"><a href="https://platform.europeanmoocs.eu/"><h4>EMMA European MOOCS</h4></a><span>| Integrating MOOC’s in the EU</span></div>
+    <div class="entry"><a href="https://www.coursera.org/"><h4>Coursera</h4></a><span>| 2400 Courses, 240 Specializations, 4 Degrees</span></div>
+    <div class="entry"><a href="https://www.edx.org/"><h4>EdX</h4></a><span></span></div>
+    <div class="entry"><a href="https://www.futurelearn.com/"><h4>Future Learn</h4></a><span>| Co-owned The Open University & SEEK Group</span></div>
+    <div class="entry"><a href="http://www.xuetangx.com/global"><h4>Xuetangx</h4></a><span>| First Chinese MOOC Platform</span></div>
+    <div class="entry"><a href="https://www.udacity.com/"><h4>Udacity</h4></a><span>| Offers nanodegrees, 76,000+ Grads. Specifically cutting-edge tech focused (also many free courses)</span></div>
+    <div class="entry"><a href="https://www.udemy.com/"><h4>Udemy</h4></a><span>| Massive amount of course created by individuals</span></div>
+    <div class="entry"><a href="https://www.skillshare.com/"><h4>Skillshare</h4></a><span>| Courses created by individuals and professionals. Specifically good in the art, design, and photography segements.</span></div>
+    <div class="entry"><a href="https://www.pluralsight.com/"><h4>Pluralsight</h4></a><span>| Mostly tech courses. Focus on enterprise employee solutions.</span></div>
+    <div class="entry"><a href="https://www.springboard.com/"><h4>Springboard</h4></a><span>| Longer skill tracks, sometimes with guaranteed job outcomes.</span></div>
+    <div class="entry"><a href="https://openclassrooms.com/en/"><h4>Open Classrooms</h4></a><span>| Offers paths, courses, apprenticeships, job guarantee, diplomas</span></div>
+    <div class="entry"><a href="https://lagunita.stanford.edu/courses"><h4>Stanford Online Courses </h4></a><span></span></div>
+    <div class="entry"><a href="https://learn.saylor.org/"><h4>Saylor Academy</h4></a><span>| College-type of online courses</span></div>
+    <div class="entry"><a href="https://oli.cmu.edu/"><h4>Carnegie Mellon Open Learning Initiative</h4></a><span>| Offers some free, open self guided courses </span></div>
+    <div class="entry"><a href="https://alison.com/"><h4>Alison</h4></a><span>| Free courses, diplomas and paths + career info </span></div>
+    <div class="entry"><a href="https://www.masterclass.com/"><h4>Masterclass</h4></a><span>| Paid subscription lessons from famous pros ex</span></div>
+  </div>
+
+  <div class="segment">
+    <h3>Computer Science</h3>
+    <div class="entry" style="border-bottom: 1px solid #ddd;"><a href="#tracks"><h4>Evaluate all CS tracks against Stanford CS curriculum</h4></a><span></span></div>
+    <div class="entry"><a href="https://www.scotthyoung.com/blog/myprojects/mit-challenge-2/"><h4>Scott Young 2012 MIT CS Challenge</h4></a><span></span></div>
+    <div class="entry"><a href="https://www.scotthyoung.com/blog/myprojects/qm/"><h4>Quantum Mechanics Challenge</h4></a><span></span></div>
+    <div class="entry"><a href="http://catalog.mit.edu/degree-charts/computer-science-engineering-course-6-3/"><h4>MIT BS in CS and Engineering Sequence</h4></a><span></span></div>
+    <div class="entry"><a href="https://www.eecs.mit.edu/docs/ug/freshman_roadmaps.pdf"><h4>MIT Roadmap Sequence</h4></a><span></span></div>
+    <div class="entry"><a href="https://teachyourselfcs.com/"><h4>Teachyourselfcs</h4></a><span>| Self taught CS sequence</span></div>
+    <div class="entry"><a href="https://bradfieldcs.com/"><h4>Bradfield School of CS </h4></a><span></span></div>
+    <div class="entry"><a href="https://github.com/ossu/computer-science"><h4>OSSU Github CS Sequence</h4></a><span>| Open Source Society University CS sequence</span></div>
+    <div class="entry"><a href="https://github.com/mvillaloboz/open-source-cs-degree"><h4>Github CS course (Mark Villaloboz)</h4></a><span></span></div>
+    <div class="entry"><a href="https://techdevguide.withgoogle.com/"><h4>Google Tech Dev Guide</h4></a><span>| Free courses and paths provided by google </span></div>
+    <div class="entry"><a href="https://www.thepathtolearn.com/"><h4>The Path To Learn</h4></a><span>| CS and Game Programming self made resource paths. </span></div>
+    <div class="entry"><a href="http://html.net/"><h4>Html.net</h4></a><span>| Free Tutorials for HTML, PHP, Java, etc. </span></div>
+    <div class="entry"><a href="https://www.sololearn.com/"><h4>Solo Learn</h4></a><span>| 30,000,000+ Community of Learning C++, C#, Java, Python, etc</span></div>
+    <div class="entry"><a href="https://rubymonk.com/"><h4>Ruby Monk</h4></a><span>| Free interactive Ruby tutorials</span></div>
+    <div class="entry"><a href="https://www.hackerearth.com/"><h4>HackerEarth</h4></a><span>| Companies and Coder, Recruitment, Challenges & Hackathons</span></div>
+    <div class="entry"><a href="https://www.codewars.com/"><h4>CodeWars</h4></a><span>| Made by Qualify.</span></div>
+    <div class="entry"><a href="https://www.tutorialspoint.com/"><h4>TutorialsPoint</h4></a><span>| Tutorial Libraries on new Tech & CS,+ other info, ebooks, Tutors. India based.</span></div>
+    <div class="entry"><a href="https://leetcode.com/"><h4>LeetCode</h4></a><span>| Original Courses & Interview Prep, and Problems, Contest, Articles</span></div>
+    <div class="entry"><a href="https://www.cybrary.it/"><h4>Cybrary.it</h4></a><span>| Free Cyber Security Training & Career Dev, Business,   </span></div>
+    <div class="entry"><a href="https://www.w3schools.com/"><h4>W3schools</h4></a><span>| Learn CSS, HTML and others for free</span></div>
+    <div class="entry"><a href="https://www.laboratoria.la/en"><h4>Laboratoria</h4></a><span>| Tech career advancement for Latin American Women</span></div>
+    <div class="entry"><a href="https://www.uopeople.edu/programs/cs/degrees/computer-science-bachelor-degree-2/curriculum/"><h4>University of the People CS Bachelor</h4></a><span>| Accredited bachelor by UOTP</span></div>
+    <div class="entry"><a href="https://www.codecademy.com/"><h4>Code Academy</h4></a><span>| Learn to code for free, practical learning.</span></div>
+  </div>
+
+  <div class="segment">
+    <h3>University/college related</h3>
+    <div class="entry"><a href="https://www.ocicu.org/"><h4>OCICU Consortium</h4></a><span>| Group of Universities that provide online courses</span></div>
+    <div class="entry"><a href="http://www.peregrineacademics.com/home/home"><h4>Peregrine Academics</h4></a><span>| Provides online courses like accounting and finance to partners </span></div>
+    <div class="entry"><a href="https://www.wiziq.com/"><h4>WizIQ</h4></a><span>| Higher Ed LMS</span></div>
+    <div class="entry"><a href="https://symbiosised.com/"><h4>Symbiosis</h4></a><span>| Helps universities build out online and blended courses</span></div>
+    <div class="entry"><a href="https://vemo.com/"><h4>Vemo</h4></a><span>| Provide’s ISA’s to universities/bootcamps (Purdue Study // GA Study // Other Research) podcast</span></div>
+    <div class="entry"><a href="https://www.docebo.com/"><h4>Docebo</h4></a><span>| Employee training platforms (LMS)</span></div>
+    <div class="entry"><a href="https://moodle.org/"><h4>Moodle</h4></a><span>| Open source, scalable LMS for Higher Ed</span></div>
+    <div class="entry"><a href="https://www.applyboard.com/ca/"><h4>Apply Board</h4></a><span>| About- helping international students apply + Visa</span></div>
+    <div class="entry"><a href="https://www.questbridge.org/about"><h4>Questbridge</h4></a><span>| Helps underprivileged students get into colleges</span></div>
+    <div class="entry"><a href="https://www.scholarme.co/"><h4>Scholar Me</h4></a><span>| fund your entire college education, with one website </span></div>
+    <div class="entry"><a href="https://graduway.com/"><h4>Graduway</h4></a><span>| Connecting alumni network with students</span></div>
+    <div class="entry"><a href="https://ivyglobal.com/"><h4>Ivy Global</h4></a><span>| College Test/ Admission Prep and Counseling </span></div>
+    <div class="entry"><a href="https://upswing.io/"><h4>Upswing</h4></a><span>| Virtual Assistant /Student Services Platform to increase student retention</span></div>
+    <div class="entry"><a href="https://www.101edu.co/"><h4>Chem 101</h4></a><span>| Helps universities adapt STEM 101 courses.</span></div>
+    <div class="entry"><a href="https://www.uopeople.edu/"><h4>University of the People</h4></a><span>| Accredited, tuition free full bachelor and masters programs.</span></div>
+    <div class="entry"><a href="http://www.niche.com/"><h4>Niche</h4></a><span>| University and college reviews</span></div>
+    <div class="entry"><a href="https://collegescorecard.ed.gov/"><h4>CollegeScoreCard.gov</h4></a><span>| Gov version of displaying Niche Data</span></div>
+    <div class="entry"><a href="https://www.bestcollegereviews.org/"><h4>Best College Reviews</h4></a><span></span></div>
+    <div class="entry"><a href="https://www.minerva.kgi.edu/"><h4>Minerva</h4></a><span>| Wholesome, new Academic programs</span></div>
+  </div>
+
+  <div class="segment">
+    <h3>Random</h3>
+    <div class="entry"><a href="https://academy.investopedia.com/?aca_ref=header_latest_1"><h4>Investopedia</h4></a><span>| Financial content and finance short lessons</span></div>
+    <div class="entry"><a href="https://stackshare.io/"><h4>Stackshare</h4></a><span>| Find the right develop tools and the companies using them</span></div>
+    <div class="entry"><a href="https://github.com/"><h4>Github</h4></a><span>| Open source code storing platform.</span></div>
+    <div class="entry"><a href="https://mlh.io/"><h4>Major League Hackers</h4></a><span>| Has challenges, internships and jobs, and Hackathons in US & Europe</span></div>
+    <div class="entry"><a href="https://stackexchange.com/"><h4>StackExchange</h4></a><span>| Q&A Programming Community includes StackOverflow. Ex Game Dev, Apple</span></div>
+    <div class="entry"><a href="https://stackoverflow.com/"><h4>StackOverflow</h4></a><span>| Q&A for anything related to programming and development.</span></div>
+    <div class="entry"><a href="https://teachable.com/"><h4>Teachable</h4></a><span>| Software for individuals to create courses</span></div>
+    <div class="entry"><a href="https://www.podia.com/"><h4>Podia</h4></a><span>| Similar to Teachable</span></div>
+    <div class="entry"><a href="https://news.ycombinator.com/"><h4>Hacker News</h4></a><span>| Front-page of the internet for hackers and makers</span></div>
+    <div class="entry"><a href="http://blog.samaltman.com/archive"><h4>Altman Blog</h4></a><span>| Blog by Sam Altman with a lot of amazing content, specifically for entrepreneurs</span></div>
+    <div class="entry"><a href="https://www.startupschool.org/"><h4>Startup School</h4></a><span>| YC but for everybody</span></div>
+    <div class="entry"><a href="https://www.onetonline.org/"><h4>Occupational Database</h4></a><span>| Find occupations - ex, rapid growth, ed industry, STEM, etc</span></div>
+    <div class="entry"><a href="https://cata-list.github.io/"><h4>Cata-List (Github)</h4></a><span>| Provides a plethora of free and paid solutions (quotes scraped from Wiki-quote)</span></div>
+    <div class="entry"><a href="https://www.merlot.org/merlot/index.htm"><h4>Merlot</h4></a><span>| 80,000+ all types of resources across K-Professional, 400+ creator profiles</span></div>
+    <div class="entry"><a href="https://plato.stanford.edu/index.html"><h4>Stanford Encyclopedia of Philosophy </h4></a><span></span></div>
+    <div class="entry"><a href="https://theoreticalminimum.com/home"><h4>Stanford Institute for Theoretical Physics </h4></a><span></span></div>
+    <div class="entry"><a href="https://www.edspira.com/"><h4>EdSpira</h4></a><span>| Courses and videos that focuses on college level financial education</span></div>
+    <div class="entry"><a href="https://www.thegreatcourses.com/"><h4>The Great Courses</h4></a><span>| Subscription on demand courses // Nat Geo + Smithsonian partners </span></div>
+  </div>
+
+  <div class="segment">
+    <h3>Bootcamps</h3>
+    <div class="entry"><a href="https://generalassemb.ly/"><h4>General Assembly</h4></a><span>| Variety of bootcamps spanning development and management</span></div>
+    <div class="entry"><a href="https://www.hackreactor.com/"><h4>Hack reactor</h4></a><span>| Software engineering bootcamps</span></div>
+    <div class="entry"><a href="https://www.thinkful.com/"><h4>Thinkful</h4></a><span>| Coding bootcamps</span></div>
+    <div class="entry"><a href="https://flatironschool.com/"><h4>Flatiron School</h4></a><span>| Coding, Data Science, and UX/UI bootcamps</span></div>
+    <div class="entry"><a href="https://designation.io/"><h4>Designation</h4></a><span>| UX and UI Design Bootcamp in partnership with Flatiron.</span></div>
+    <div class="entry"><a href="https://lambdaschool.com/"><h4>Lambda School – Income share agreement based bootcamps</h4></a><span></span></div>
+    <div class="entry"><a href="https://www.makeschool.com/"><h4>Make School</h4></a><span>| Accredited Bachelor in CS (2 yrs) </span></div>
+    <div class="entry"><a href="https://www.trilogyed.com/"><h4>Trilogy Ed</h4></a><span>| 4 tech programs. & Workforce accelerator for students, universities and employers</span></div>
+    <div class="entry"><a href="http://thefirehoseproject.com/"><h4>Firehose Project</h4></a><span>| Web development bootcamp</span></div>
+    <div class="entry"><a href="https://www.draperuniversity.com/"><h4>Draper University</h4></a><span>| 5 Week “Hero Training” to prepare entrepreneurial projects with pitches</span></div>
+    <div class="entry"><a href="https://ventureforamerica.org/"><h4>Venture For America</h4></a><span>| Helps retrain college grads and connect them with startups in US cities</span></div>
+  </div>
+
+  <div class="segment">
+    <h3>Bootcamp guides</h3>
+    <div class="entry"><a href="https://careerkarma.com/"><h4>Career Karma</h4></a><span>| Helps bootcamp applicants prepare & get accepted</span></div>
+    <div class="entry"><a href="https://www.coursereport.com/"><h4>Coursereport</h4></a><span>| Creates guides for best bootcamp, research, matching service.</span></div>
+    <div class="entry"><a href="https://www.switchup.org/"><h4>Switchup</h4></a><span>| Matching service for best bootcamps, research </span></div>
+    <div class="entry"><a href="https://cirr.org/"><h4>CIRR</h4></a><span>| Bootcamps outcome board</span></div>
+  </div>
+
+  <div class="segment">
+    <h3>K-12</h3>
+    <div class="entry"><a href="https://www.opened.com/search"><h4>OpenEd</h4></a><span>| K-12 Resources aligned with learning objectives.</span></div>
+    <div class="entry"><a href="https://tomorrow.org/speakup/index.html"><h4>Project Tomorrow</h4></a><span>| Surveys 300,000+ K-12 to gain insights</span></div>
+    <div class="entry"><a href="https://www.altschool.com/"><h4>AltSchool</h4></a><span>| Whole-child approach to K12 education</span></div>
+    <div class="entry"><a href="https://www.curriki.org/"><h4>Curriki</h4></a><span>| Free K-12 resources </span></div>
+    <div class="entry"><a href="https://www.apexlearning.com/"><h4>Apex Learning</h4></a><span>| Digital course catalog</span></div>
+    <div class="entry"><a href="https://www.khanacademy.org/"><h4>Khan Academy</h4></a><span>| High-quality, free courses in Physics, Computer Science, Biology, Chemistry and more.</span></div>
+  </div>
+
+  <div class="segment">
+    <h3>Exploratory</h3>
+    <div class="entry"><a href="https://curiositystream.com/"><h4>Curiosity Stream</h4></a><span>| Over 2400 high quality educational shows and series</span></div>
+    <div class="entry"><a href="https://hackdesign.org/"><h4>HackDesign</h4></a><span>| Curated design lessons newsletter</span></div>
+    <div class="entry"><a href="https://watchnebula.com/"><h4>Nebula</h4></a><span>| Subscription based creator original content (ex. Collegeinfogeek) </span></div>
+    <div class="entry"><a href="https://gohighbrow.com/"><h4>Highbrow</h4></a><span>| Daily emails on 250+ topics, 5 min reads. 400,000+ users</span></div>
+    <div class="entry"><a href="https://brilliant.org/"><h4>Brilliant.org</h4></a><span>| Short, interactive courses primarily focused on STEM</span></div>
+    <div class="entry"><a href="https://www.lumosity.com/en/"><h4>Lumosity</h4></a><span>| Brain training games created with Scientists.</span></div>
+    <div class="entry"><a href="https://curious.com/overview"><h4>Curious</h4></a><span>| Lessons straight to your inbox, based on curious quotient</span></div>
+    <div class="entry"><a href="https://www.ted.com/"><h4>TED</h4></a><span>| Talks are influential videos from expert speakers on education, business, science, tech and creativity</span></div>
+  </div>
+
+  <div class="add">
+    <b>Want to add a resource to the list?</b> Share it in the comments below in the following format: {Segment} - {Resource name}: {URL to site} | {Description}<br>
+    e.g. MOOC's and online tutorials - Courseroot: https://courseroot.com | Instant search for 80,000+ online courses and tutorials
+  </div>
+
+  <div class="segment">
+    <h3>Job focused</h3>
+    <div class="entry"><a href="http://upstartacademy.org/"><h4>Upstart Academy</h4></a><span>| Digital Academy & Agency for Students (complete free projects, portfolio + get hired ) </span></div>
+    <div class="entry"><a href="https://www.alwayshired.com/"><h4>AlwaysHired</h4></a><span>| Tech Sales Hiring Bootcamp (courses + placement)</span></div>
+    <div class="entry"><a href="https://flockjay.com/"><h4>Flockjay</h4></a><span>| YC W19 // Online Sales Academy. 1 yr ISA 10% > 50k</span></div>
+    <div class="entry"><a href="https://www.pathrise.com/"><h4>Pathrise</h4></a><span>| YC W18 Tech Career Accelerator 4 fields </span></div>
+    <div class="entry"><a href="https://www.insidesherpa.com/"><h4>Inside Sherpa</h4></a><span>| YC W19 Free Virtual Work Exp/ Internships</span></div>
+    <div class="entry"><a href="https://www.pathstream.com/"><h4>Pathstream</h4></a><span>| Programs built w/ uni & companies</span></div>
+    <div class="entry"><a href="https://homepage.modernguild.com/"><h4>Modern Guild</h4></a><span>| Free Entry Level Career Training for college students to land technical jobs.</span></div>
+    <div class="entry"><a href="https://www.newcraft.io/"><h4>NewCraft</h4></a><span>| Leverages apprenticeships to help companies and students </span></div>
+    <div class="entry"><a href="https://mentorcruise.com/"><h4>Mentor Cruise</h4></a><span>| 1 on 1 tech mentors, (1800 mentor /120 student ratio). Mentors set weekly price. </span></div>
+    <div class="entry"><a href="https://hireclub.com/"><h4>HireClub (Paid career coaching/ job placement aid</h4></a><span></span></div>
+    <div class="entry"><a href="https://www.toptal.com/"><h4>TopTal</h4></a><span>| Hire top UI and UX designer talent</span></div>
+    <div class="entry"><a href="https://www.hackerrank.com/"><h4>HackerRank</h4></a><span>| Helps Customers eval tech talent & do interviews, YC S11 </span></div>
+  </div>
+
+  <div class="segment">
+    <h3>Student focused</h3>
+    <div class="entry"><a href="https://thielfellowship.org/"><h4>Thiel Fellowship</h4></a><span>| $100,000 to drop out for 2 years and work on a company</span></div>
+    <div class="entry"><a href="https://angel.co/"><h4>AngelList</h4></a><span>| Jobs and investment opportunities at startups</span></div>
+    <div class="entry"><a href="https://remoteml.com/"><h4>VC Wiz</h4></a><span>| Find investors and firms</span></div>
+    <div class="entry"><a href="https://www.dormroomfund.com/"><h4>Dorm Room Fund</h4></a><span>| 300 founders - 40 Universities. </span></div>
+    <div class="entry"><a href="http://www.roughdraft.vc/index.html"><h4>Rough Draft Ventures</h4></a><span>| Students supporting university founders</span></div>
+    <div class="entry"><a href="https://contrarycap.com/"><h4>Contrary Capital</h4></a><span>|  Pre-seed University focused venture fund</span></div>
+    <div class="entry"><a href="https://rethink.vc/education/"><h4>ReThink Education</h4></a><span>| VC firm, education portfolio</span></div>
+    <div class="entry"><a href="https://pioneer.app/"><h4>Pioneer</h4></a><span>| Weekly funding contest for interesting projects. $7000 + SF trip</span></div>
+    <div class="entry"><a href="https://angeltrack.firstround.com/"><h4>Angel Track</h4></a><span>| Connects operators and founders to develop skills and identities as early stage investors.</span></div>
+    <div class="entry"><a href="https://www.entangled.group/"><h4>Entangled Group</h4></a><span>| Venture studio for education ecosystem</span></div>
+  </div>
+
+  <div class="segment">
+    <h3>Gap year programs</h3>
+    <div class="entry"><a href="https://usagapyearfairs.org/"><h4>USA Gap Year Fairs</h4></a><span>| Go Overseas</span></div>
+    <div class="entry"><a href="https://www.goabroad.com/"><h4>Go Abroad</h4></a><span>| 17,000+ programs</span></div>
+    <div class="entry"><a href="https://www.gograd.org/"><h4>Go Grad</h4></a><span>| Graduate and PhD Online Program Database </span></div>
+    <div class="entry"><a href="https://www.yearon.com/"><h4>YearOn</h4></a><span>| Travel, Learn, Intern. (Thiel Fellowship first cohort)</span></div>
+  </div>
+
+  <div class="segment">
+    <h3>Language learning</h3>
+    <div class="entry"><a href="https://www.duolingo.com/"><h4>Duolingo</h4></a><span>| One of the most popular and well-reviewed language learning applications.</span></div>
+    <div class="entry"><a href="https://www.livemocha.co/"><h4>Live Mocha.co</h4></a><span>| Another free language learning platform</span></div>
+    <div class="entry"><a href="https://www.coffeestrap.com/"><h4>CoffeeStrap</h4></a><span>| Language learning platform that matches conversations with others.</span></div>
+  </div>
+
+  <div class="segment">
+    <h3>Blochcain-based</h3>
+    <div class="entry"><a href="https://dp.la/"><h4>Digital Public Library of America</h4></a><span>| Learn about different topics/time periods online</span></div>
+    <div class="entry"><a href="http://globe.cid.harvard.edu/?mode=productspace3D&id=US"><h4>Economic Explorer/ Visualization</h4></a><span>| Visualizing Global Trade/Exports & Imports </span></div>
+    <div class="entry"><a href="https://www.google.com/publicdata/directory"><h4>Google Public Data Explorer</h4></a><span>| Search for datasets </span></div>
+    <div class="entry"><a href="http://www.gnod.com/"><h4>Global Network of Discovery</h4></a><span>| Offers product chart, music map, art exploration and more </span></div>
+    <div class="entry"><a href="https://www.stonybrook.edu/commcms/phd-career-ladder/index.php"><h4>Phd Ladder Program SBU</h4></a><span>| Ted Talk Reimagining the PhD- Nadia Jaber, Career Exploration & Planning</span></div>
+    <div class="entry"><a href="https://www.washingtontimes.com/news/2018/jan/8/mark-zuckerbergs-100-million-gift-to-newark-public/"><h4>Washington Post</h4></a><span>| Zuckerberg Newark 100m wasted </span></div>
+    <div class="entry"><a href="https://www.theverge.com/2019/6/19/18681845/facebook-moderator-interviews-video-trauma-ptsd-cognizant-tampa"><h4>Fb sweat shop</h4></a><span></span></div>
+    <div class="entry"><a href="https://www.16personalities.com/free-personality-test"><h4>Myers Briggs Free</h4></a><span></span></div>
+    <div class="entry"><a href="https://www.theatlantic.com/education/archive/2019/06/what-its-like-when-your-college-shuts-down/591862/"><h4>Atlantic closing colleges article</h4></a><span></span></div>
+  </div>
+
+  <div class="segment">
+    <h3>Extra stuff</h3>
+    <div class="entry"><a href="https://www.duolingo.com/"><h4>Duolingo</h4></a><span>| One of the most popular and well-reviewed language learning applications.</span></div>
+    <div class="entry"><a href="https://www.livemocha.co/"><h4>Live Mocha.co</h4></a><span>| Another free language learning platform</span></div>
+    <div class="entry"><a href="https://www.coffeestrap.com/"><h4>CoffeeStrap</h4></a><span>| Language learning platform that matches conversations with others.</span></div>
+  </div>
+
+  <div class="header">
+    <a name="tracks"></a>
+    <h1>Evaluate all CS tracks to become<br>an awesome <i><span class="typeOut"></span></i></h1>
+    <p>Gain insights into the many Computer Science tracks that are offered and how they compare to the full CS curriculum of Stanford</p>
+    <div class="image" style="background-position: top; background-size: cover;background-image: linear-gradient(rgba(252, 252, 252, 0), rgba(252, 252, 252, 1)), url(/img/computersciencetracks.png);">
+    </div>
+
+    <!-- Begin Mailchimp Signup Form -->
+  <div id="mc_embed_signup">
+  <form action="https://courseroot.us17.list-manage.com/subscribe/post?u=9d814c8d60f6cbf2553333ca2&amp;id=4b27ad8189" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
+  	<label for="mce-EMAIL">Receive the latest computer science tracks and see how they compare against the full CS curriculum</label>
+    <input type="text" value="" name="FNAME" class="fname" id="mce-FNAME" placeholder="FIRST NAME" required>
+  	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="YOUR EMAIL*" required>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9d814c8d60f6cbf2553333ca2_4b27ad8189" tabindex="-1" value=""></div>
+      <input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button" onclick="mixpanel.track('Submission - Mapgrasp');">
+      </div>
+  </form>
+  </div>
+
+  <div style="margin-top: 120px;" id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://mapgrasp.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+<script>
+mixpanel.track("Pageview - Mapgrasp");
+
+setTimeout(function(){$('.ctrld').fadeIn();},2000)
+
+  var options = {
+    strings: [
+    "data scientist",
+    "front-end developer",
+    "self-driving car engineer",
+    "AI specialist",
+    "blockchain developer",
+    "entrepreneur",
+    "game developer"],
+    typeSpeed: 50,
+    backSpeed: 20,
+    loop: true,
+    startDelay: 1500
+  }
+
+  var typed = new Typed(".typeOut", options);
+</script>
+
+</body>
+
+</html>
